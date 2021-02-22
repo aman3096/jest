@@ -2,7 +2,13 @@ const mockApi ='https://us-central1-rak-slack-poc.cloudfunctions.net/webApi/api/
 const fetch = require("node-fetch");
 
 // Defining async function 
-async function getApi(mockApi) { 
+
+
+/**
+ * 
+ * @param {String} mockApi 
+ */
+export async function getApi(mockApi) { 
     
     // Storing response 
     const response = await fetch(mockApi); 
@@ -10,8 +16,13 @@ async function getApi(mockApi) {
     var data = await response.json(); 
     return data; 
 } 
-// Calling that async function 
-async function doLogin(userName,pass){
+// Calling that async function
+/**
+ * 
+ * @param {String} userName 
+ * @param {String} pass 
+ */
+export async function doLogin(userName,pass){
     const backData = await getApi(mockApi);
     
     const result = backData.loginCred.filter(i=>i.userName===userName && i.password === pass);
@@ -22,4 +33,3 @@ async function doLogin(userName,pass){
     return true;
     }
 }
-module.exports = doLogin;

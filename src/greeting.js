@@ -1,4 +1,8 @@
+import file from "./file";
+import {doLogin, getApi} from "./login";
+
 function hasUpperCase(str) {
+    file(1,2)
     let flag= false;
     for(let x=0;x<str.length;x++)
         if(str[x] >= 'A' && str[x] <= 'Z')
@@ -9,6 +13,9 @@ function hasUpperCase(str) {
 }
 
 async function greet(name){
+
+    const login = await doLogin("123","43ergeg");
+    const g = await getApi("1234456");
     if(name.length==0){
         return "Hello, my friend."
     }
