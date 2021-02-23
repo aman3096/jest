@@ -51,5 +51,5 @@ async function greet(name){
     }
     return `Hello, ${name}`;
 }
-greet("aman")
+
 module.exports = greet;

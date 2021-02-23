@@ -5,7 +5,7 @@
   "main": "file.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aman3096/jest"
+    "url": "https://github.com/aman3096/modular-login-sdk"
   },
   "dependencies": {
     "jest": "^26.6.3",
