@@ -3,8 +3,10 @@ test driven development using jest and webpack config for treating es6 modules a
 This repository explains about the various test driven development scenarios that are built using Jest (a javascript testing library) 
 
 ## init of package.json
-if you want to start the project from scratch then initialize a package.json. You can do this via this command npm init -y (this will auto generate the package.json file)
-##Explaination of calculator.test.js and calculator.js
+If you want to start the project from scratch then initialize a package.json. You can do this via this command 
+    npm init -y 
+   This will auto generate the package.json file
+## Explaination of calculator.test.js and calculator.js
     This is a calculator coding kata. Problem link https://osherove.com/tdd-kata-1
       ####calculator.test.js
         According to Uncle bobs TDD rule we first write test file to intentionally make it fail then we will write the business logic in order to pass. this file
@@ -28,7 +30,7 @@ if you want to start the project from scratch then initialize a package.json. Yo
         this file has business logic for writing of the add function. For now I have focussed more on the coding kata for tdd and later scenarios I added more real- life
         scenarios like login.
 
-##file.test.js and file.js
+## file.test.js and file.js
       ### file.js
         the comments seen in this file are the format for the JSDoc format which does dynamic typechecking and later on we can generate documentation using documentation serve
         this function returns the addition of 2 number
@@ -36,29 +38,29 @@ if you want to start the project from scratch then initialize a package.json. Yo
       ### file.test.js
         this file uses various functions from jest library as to check for TDD practice
       
-##fizzbuzz.test.js and fizzbuzz.js
+## fizzbuzz.test.js and fizzbuzz.js
     this is a solution for fizzbuzz coding kata using TDD. kata link https://codingdojo.org/kata/FizzBuzz/
 
-##greeting.test.js and greeting.js
+## greeting.test.js and greeting.js
     this is a solution for greeting coding kata using TDD.Problem statement here https://github.com/testdouble/contributing-tests/wiki/Greeting-Kata
 
-##login.test.js and login.js
+## login.test.js and login.js
   this uses a mock server to check for login of the user using TDD
     It uses basic business logic for checking if the correct user has logged in this time.
     
     
-##JSDoc and Documentation
+## JSDoc and Documentation
   the JsDoc format used by documentation.js enables the developer to check about the module on what does the params type would be? Also if we provide wrong type for a function defined 
   then it must be showing red underline for determining the users input.
   For enabling this  
     1. we must configure our IDE first. In our project, I have done and included in the .vscode folder settings.
     2. use documenation.js format in comments. For more info you can refer its documentation on https://github.com/documentationjs/documentation/blob/master/docs/GETTING_STARTED.md
   
-##Explaination of package.json
-###installation
+## Explaination of package.json
+### installation
 run npm install or npm i in order install the dependencies and devDependencies required for the project
 
-###dependencies used
+### dependencies used
     #### 1. Jest -
       A javascript testing library that is used for test-driven-development (TDD). For more info you can refer to its documentation at https://jestjs.io/docs/en/getting-started
       Before you continue, make sure jest is on your system. (If it's not installed, run npm install -g jest)
