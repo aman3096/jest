@@ -1,5 +1,4 @@
 const greet = require('./greeting');
-
 test('method should greet with name',async ()=>{
     const check = await greet('Aman');
     const empty = await greet('');

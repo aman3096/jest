@@ -1,8 +1,6 @@
-import file from "./file";
-import {doLogin, getApi} from "./login";
 
+const {doLogin, getApi} =require("./login");
 function hasUpperCase(str) {
-    file(1,2)
     let flag= false;
     for(let x=0;x<str.length;x++)
         if(str[x] >= 'A' && str[x] <= 'Z')
@@ -12,9 +10,17 @@ function hasUpperCase(str) {
     return flag;
 }
 
+/**
+ * 
+ * @param {String} name 
+ */
 async function greet(name){
-
-    const login = await doLogin("123","43ergeg");
+    const mockApi ='https://us-central1-rak-slack-poc.cloudfunctions.net/webApi/api/v1/mock-accounts';
+    /**
+     * 
+     */
+    const login = await doLogin("JoeBiden","PresUSA",mockApi);
+    console.log('fellows '+ login);
     const g = await getApi("1234456");
     if(name.length==0){
         return "Hello, my friend."
@@ -45,4 +51,5 @@ async function greet(name){
     }
     return `Hello, ${name}`;
 }
+greet("aman")
 module.exports = greet;
