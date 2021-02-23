@@ -7,8 +7,8 @@ If you want to start the project from scratch then initialize a package.json. Yo
     npm init -y 
    This will auto generate the package.json file
 ## Explaination of calculator.test.js and calculator.js
-    This is a calculator coding kata. Problem link https://osherove.com/tdd-kata-1
-      ####calculator.test.js
+This is a calculator coding kata. Problem link https://osherove.com/tdd-kata-1
+      #### calculator.test.js
         According to Uncle bobs TDD rule we first write test file to intentionally make it fail then we will write the business logic in order to pass. this file
         uses test() method of jest and checks whether the adddition method is present in calculator.js and checks for a specific precise checks.
         1. It uses async-await for async programming construct
