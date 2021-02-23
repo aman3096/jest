@@ -1,4 +1,4 @@
-# jest
+# test driven development using jest and webpack config for sdk starter
 test driven development using jest and webpack config for treating es6 modules and syntax.
 This repository explains about the various test driven development scenarios that are built using Jest (a javascript testing library) 
 
