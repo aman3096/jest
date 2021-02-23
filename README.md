@@ -5,7 +5,7 @@ This repository explains about the various test driven development scenarios tha
 ## init of package.json
 if you want to start the project from scratch then initialize a package.json. You can do this via this command npm init -y (this will auto generate the package.json file)
 ##Explaination of calculator.test.js and calculator.js
-    ###calculator coding kata -
+    This is a calculator coding kata. Problem link https://osherove.com/tdd-kata-1
       ####calculator.test.js
         According to Uncle bobs TDD rule we first write test file to intentionally make it fail then we will write the business logic in order to pass. this file
         uses test() method of jest and checks whether the adddition method is present in calculator.js and checks for a specific precise checks.
