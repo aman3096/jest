@@ -36,7 +36,7 @@ function checkHas5(i){
  * 
  *  
  */
-async function prog(num){
+export default async function prog(num){
     let asd=[] 
     for(let i=1;i<=num;i++){
         if(i%3==0|| checkHas3(i)){
@@ -51,4 +51,3 @@ async function prog(num){
     }
     return asd
 }
-module.exports= prog;

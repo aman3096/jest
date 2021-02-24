@@ -14,7 +14,7 @@ function hasUpperCase(str) {
  * 
  * @param {String} name 
  */
-async function greet(name){
+export default async function greet(name){
     const mockApi ='https://us-central1-rak-slack-poc.cloudfunctions.net/webApi/api/v1/mock-accounts';
     /**
      * 
@@ -51,5 +51,3 @@ async function greet(name){
     }
     return `Hello, ${name}`;
 }
-
-module.exports = greet;
