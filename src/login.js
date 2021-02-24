@@ -21,7 +21,7 @@ async function getApi(mockApi) {
  * @param {String} userName 
  * @param {String} pass 
  */
-async function doLogin(userName,pass,mockApi){
+ async function doLogin(userName,pass,mockApi){
     const backData = await getApi(mockApi);
     
     const result = backData.loginCred.filter(i=>i.userName===userName && i.password === pass);
@@ -39,4 +39,8 @@ async function as(){
 }
 as();
 
-module.exports={getApi,doLogin,as}
+module.exports = {
+    getApi,
+    doLogin,
+    as
+};
