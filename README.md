@@ -1,7 +1,17 @@
-# TDD Examples and typedef explaining
-test driven development using jest and webpack config for treating es6 modules and syntax.
+# TDD Examples and typedef explaining and Login module
+test driven development using jest and webpack config for treating es6 modules and syntax and mock login scenario done using a mock server.
 This repository explains about the various test driven development scenarios that are built using Jest (a javascript testing library) 
-
+## Usage of Login.js in other projects
+ In order to use the Login.js file in other projects, use the path "modular-login-sdk/src/login" in order to use the login.js
+ 
+ ### Example of usage of login.js
+ Login.js has one function name doLogin() which takes 3 params -userName, password and the login url (mock server) and has a return type of boolean
+  ```
+  doLogin( userName, pass, mockServerURL)  //returns true or false on the basis of the 3 params
+  userName- String where userName needs to be provided
+  password - String where password would be stored
+  mockServerURL - String where URL of mock server is kept
+  ```
  #### calculator.js
    This file has business logic for writing of the add function. For now I have focussed more on the coding kata for tdd and later scenarios I added more real- life scenarios like login.
 
