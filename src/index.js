@@ -32,10 +32,3 @@ export async function doLogin(userName,pass,mockApi){
     return true;
     }
 }
-export async function as(){
-    const ans = await doLogin("asd","123",'https://us-central1-rak-slack-poc.cloudfunctions.net/webApi/api/v1/mock-accounts')
-    console.log(ans);
-
-}
-as();
-
