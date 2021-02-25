@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://modular-login-sdk/./src/styles/index.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,sBAAsB;IACtB,WAAW;IACX,eAAe;AACnB,C","file":"main.css","sourcesContent":["body{\n    margin: 0;\n    background-color: plum;\n    color: #222;\n    font-size: 20px;\n}"],"sourceRoot":""}
