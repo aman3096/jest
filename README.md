@@ -8,6 +8,9 @@ This repository explains about the various test driven development scenarios tha
  Login.js has one function name doLogin() which takes 3 params -userName, password and the login url (mock server) and has a return type of boolean
   ```
   doLogin( userName, pass, mockServerURL)  //returns true or false on the basis of the 3 params
+  userName- String where userName needs to be provided
+  password - String where password would be stored
+  mockServerURL - String where URL of mock server is kept
   ```
  #### calculator.js
    This file has business logic for writing of the add function. For now I have focussed more on the coding kata for tdd and later scenarios I added more real- life scenarios like login.
